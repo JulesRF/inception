@@ -9,7 +9,7 @@ all :
 	sudo chmod 777 $(WORDPRESS_VLM)
 	sudo docker-compose -f $(CMP_PATH) up -d --build
 
-re : fclean all
+re : clean all
 
 stop:
 	sudo docker-compose -f $(CMP_PATH) stop
